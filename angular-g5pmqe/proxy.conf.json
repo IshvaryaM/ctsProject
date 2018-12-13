@@ -1,0 +1,23 @@
+[{
+  "/api": {
+    "target":  "https://www.latlong.net",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/api": ""},
+    "headers": {
+      "Accept": "text/html",
+    }
+  }
+},{
+  "/oxfordapi/*": {
+    "target": "https://od-api.oxforddictionaries.com/api/v1/entries/en/",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "headers": {
+      "Accept": "text/html"
+    },
+    "pathRewrite": {"^/oxfordapi" : ""}
+  }
+}]

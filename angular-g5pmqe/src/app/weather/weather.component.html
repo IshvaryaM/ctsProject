@@ -1,0 +1,11 @@
+
+
+<div class="card">
+ <div [chart]="chart"></div>
+ <div class="card-body">
+    <h5 class="card-title"><strong>Location </strong> {{cityChosen}} <br /> <strong>Wind Speed</strong> {{windSpeed}}<br /> <strong>Humidity</strong> {{humidity}}</h5>
+    <p class="card-text"><i>{{summary}}</i></p>
+    <button type="button" class="btn btn-primary" (click)="unitConversion()">{{unit_text}}</button>
+   <button type="button" class="btn btn-dark" [routerLink]="['/home']">Back to Home</button>
+  </div>
+</div>

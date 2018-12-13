@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header blocks">
+    Weather Forecast Module
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group blocks">
+        <div class="blocks">
+          <ng2-completer [inputClass]="'form-control form-control-inline'" name="name" id="name" [(ngModel)]="name" [datasource]="citiesList" [minSearchLength]="0" placeholder="Enter city.."></ng2-completer>
+        </div>
+      </div>
+      <div class="alert alert-danger" *ngIf="showError && name.length === 0" role="alert">{{formError}}</div>
+      <div class="blocks"><button type="submit" class="btn btn-success" (click)="getWeather()">Get Weather</button></div>
+    </form> 
+  </div>
+</div>

@@ -1,0 +1,4 @@
+.blocks {text-align: center;padding: 5px 0px;}
+.blocks input {height: 30px; border: 1px solid #ddd; width: 60%; text-align: center; font-size: 14px;}
+.blocks.error {border: 2px solid red;color: coral;padding: 5px 0px;}
+.card-header {background-color: black; color: white}
